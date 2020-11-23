@@ -1,0 +1,13 @@
+[lbservers]
+loadbalancer1 ansible_host=52.249.183.221
+
+[wildflyservers]
+wildfly1 ansible_host=23.96.16.128
+wildfly2 ansible_host=23.96.13.29
+
+[all:vars]
+ansible_ssh_private_key_file=azure.pem
+ansible_become=true
+ansible_user=net2008
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+

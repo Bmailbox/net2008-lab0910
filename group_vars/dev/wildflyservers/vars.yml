@@ -1,1 +1,1 @@
-secret_name: net2008
+wildfly_secret_content: "{{ wildfly_secret_vault }}"

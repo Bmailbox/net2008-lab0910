@@ -2,8 +2,13 @@
 loadbalancer1 ansible_host=52.249.183.221
 
 [wildflyservers]
-wildfly1 ansible_host=23.96.16.128
-wildfly2 ansible_host=23.96.13.29
+wildfly1 ansible_host=23.96.123.145
+wildfly2 ansible_host=13.68.211.245
+
+[dev]
+loadbalancer1
+wildfly1
+wildfly2
 
 [all:vars]
 ansible_ssh_private_key_file=azure.pem
